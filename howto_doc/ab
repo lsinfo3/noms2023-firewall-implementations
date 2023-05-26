@@ -1,0 +1,10 @@
+Make sure apache is really running with your own command and not via service
+
+source /etc/apache2/envvars
+sudo -E ip netns exec ns_server /usr/sbin/apache2
+
+make sure the local loopback interface for the ns_server namespace is up
+
+sudo ip netns exec ns_server ip link set dev lo up
+
+otherwise varnish cannot reach the apache server

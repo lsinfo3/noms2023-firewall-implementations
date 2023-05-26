@@ -1,0 +1,17 @@
+more dpdk infos: informatik.uni-wuerzburg.de/wiki/private:research:p4:100gmoongen
+
+download dpdk
+
+remove build folder
+
+nano config/common_base
+CONFIG_RTE_LIBRTE_MLX5_PMD=n to CONFIG_RTE_LIBRTE_MLX5_PMD=y
+
+make config T=x86_64-native-linux-gcc O=build
+
+make -j12 0=build
+
+in every dpdk source file adjust to correct identifier for nid:
+
+#define INTERFACE_ID_1 "0000:61:00.0"
+#define INTERFACE_ID_2 "0000:61:00.1"

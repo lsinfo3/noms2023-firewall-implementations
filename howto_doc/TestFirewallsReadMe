@@ -1,0 +1,13 @@
+https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/
+add ssh keys so you dont need password
+
+https://phpraxis.wordpress.com/2016/09/27/enable-sudo-without-password-in-ubuntudebian/
+enable sudo for fwtestbed on both machines
+
+adjust and run configureLastGenHostForIpferf on iperf server (adjust the interfaces)
+
+adjust and run configureFwHost.sh on firewall server
+
+maybe adjust setDualThreadAfinity.sh setSingleThreadedAffinity.sh setWorkerAffinity.sh
+
+configure and run testFirewalls.sh
